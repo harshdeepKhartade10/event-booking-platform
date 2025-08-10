@@ -37,28 +37,24 @@ cd event-booking-platform-mern
 
 ### 2. Environment Variables
 - Copy `.env.example` to `.env` in both `backend/` and `frontend/` and fill in the required values.
--Backend
- PORT=5000
--MONGO_URI=://localhost:27017/eventbooking or
--MONGO_URI=mongodb+srv://<USERNAME>:<PASSWORD>@<CLUSTER_NAME>.mongodb.net/eventbooking
--JWT_SECRET=YOUR_RANDOM_SECRET_KEY
--EMAIL_USER=YOUR_EMAIL_ADDRESS
--EMAIL_PASS=YOUR_EMAIL_PASSWORD_OR_APP_PASSWORD
--CLIENT_URL=http://localhost:5173
--RAZORPAY_KEY_ID=YOUR_RAZORPAY_KEY_ID
--RAZORPAY_KEY_SECRET=YOUR_RAZORPAY_KEY_SECRET
+## Environment Variables
 
--Frontend:
--VITE_API_URL=http://localhost:5000
+### Backend
+```env
+PORT=5000
+# Local MongoDB
+MONGO_URI=mongodb://localhost:27017/eventbooking
+# OR Cloud MongoDB
+MONGO_URI=mongodb+srv://<USERNAME>:<PASSWORD>@<CLUSTER_NAME>.mongodb.net/eventbooking
+JWT_SECRET=YOUR_RANDOM_SECRET_KEY
+EMAIL_USER=YOUR_EMAIL_ADDRESS
+EMAIL_PASS=YOUR_EMAIL_PASSWORD_OR_APP_PASSWORD
+CLIENT_URL=http://localhost:5173
+RAZORPAY_KEY_ID=YOUR_RAZORPAY_KEY_ID
+RAZORPAY_KEY_SECRET=YOUR_RAZORPAY_KEY_SECRET
 
-
-
-
-
-
-
-
-
+VITE_API_URL=http://localhost:5000
+```
 ### 3. Run with Docker (Recommended)
 ```bash
 docker-compose up --build
