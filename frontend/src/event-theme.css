@@ -1,0 +1,176 @@
+/* Event Booking Platform Theme */
+body {
+  background: #f7f8fa;
+  color: #252525;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.navbar {
+  background: #2b3945;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  font-size: 1.1rem;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+  transition: color 0.2s;
+}
+.navbar a:hover {
+  color: #f9d923;
+}
+
+.navbar-fixed {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  z-index: 1000 !important;
+  background: #2b3945 !important;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.10) !important;
+  padding: 0.8em 2vw !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 2em !important;
+}
+.navbar button {
+  background: #f9d923;
+  color: #252525;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
+.home, .dashboard, .register, .login, .event-details, .verify-email, .admin-panel {
+  max-width: 600px;
+  margin: 4vh auto 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+h2, h3 {
+  color: #2b3945;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+form.event-filter-bar {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 0.7em !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  margin: 1.1em auto 1.5em auto !important;
+  padding: 0.3em 0.2em !important;
+  overflow-x: auto !important;
+}
+.event-filter-bar * {
+  display: inline-block !important;
+  margin: 0 !important;
+  width: auto !important;
+  min-width: 60px !important;
+  max-width: 180px;
+  font-size: 0.97em !important;
+  vertical-align: middle !important;
+}
+.event-filter-bar input[type="date"],
+.event-filter-bar input[type="number"] {
+  min-width: 80px !important;
+  max-width: 120px !important;
+}
+.event-filter-bar button {
+  white-space: nowrap !important;
+}
+
+input, select, textarea {
+  padding: 0.7rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #f7f8fa;
+}
+button[type="submit"], .home button, .dashboard button, .admin-panel button {
+  background: #2b3945;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button[type="submit"]:hover, .home button:hover, .dashboard button:hover, .admin-panel button:hover {
+  background: #f9d923;
+  color: #252525;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+li {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.7rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: #fff;
+}
+th, td {
+  padding: 0.8rem 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+th {
+  background: #f7f8fa;
+}
+.error {
+  color: #e63946;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+@media (max-width: 700px) {
+  .home, .dashboard, .register, .login, .event-details, .verify-email, .admin-panel {
+    padding: 1rem;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+}
