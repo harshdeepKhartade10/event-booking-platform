@@ -1,0 +1,20 @@
+.filtered-single-event {
+  justify-items: start !important;
+  align-items: start !important;
+}
+.filtered-single-event .event-mmt-card {
+  width: 397.77px !important;
+  min-width: 397.77px !important;
+  max-width: 397.77px !important;
+  margin: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+.filtered-single-event .event-mmt-img {
+  height: 200px !important;
+  min-height: 200px !important;
+  max-height: 200px !important;
+  width: 100%;
+  object-fit: cover;
+  background: #e5e7eb;
+}
