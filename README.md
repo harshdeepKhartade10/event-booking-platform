@@ -54,7 +54,7 @@ RAZORPAY_KEY_ID=YOUR_RAZORPAY_KEY_ID
 RAZORPAY_KEY_SECRET=YOUR_RAZORPAY_KEY_SECRET
 
 
-###
+### Frontend
 VITE_API_URL=http://localhost:5000
 ```
 ### 3. Run with Docker (Recommended)
